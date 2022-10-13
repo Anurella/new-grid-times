@@ -1,6 +1,6 @@
-# New Grid Times — Module 7 workshop
+# New Grid Times — Module 7 workshop solution
 
-In this workshop, our goal is to build a sophisticated, responsive grid layout for an online newspaper, the New Grid Times:
+This is my solution to the workshop, the goal is to build a sophisticated, responsive grid layout for an online newspaper, the New Grid Times: 🤗 
 
 ![Desktop-sized mockup](/docs/desktop-mockup.png)
 
@@ -8,7 +8,10 @@ In this workshop, our goal is to build a sophisticated, responsive grid layout f
 
 Like the last few workshops, this is a React / styled-components application.
 
-This application is built using a **mobile-first methodology**. We're starting from a place of having almost-finished mobile styles; your mission is to add that last bit of polish on mobile, and then implement the tablet/laptop layouts specified in the designs.
+This application is built using a **mobile-first methodology**. 
+
+### Mission
+We're starting from a place of having almost-finished mobile styles; your mission is to add that last bit of polish on mobile, and then implement the tablet/laptop layouts specified in the designs.
 
 Some design tokens, including colors, fonts, and media queries have been provided in `src/constants.js`. The colors and fonts have also been applied as global CSS variables in `src/components/GlobalStyles`.
 
@@ -186,7 +189,7 @@ Finally, we want the columns on desktop to be equally-spaced:
 
 ---
 
-## Solution
+## Hosted
 
-View the solution on the course platform:
-https://courses.joshwcomeau.com/css-for-js/07-css-grid/19-workshop-solution
+View the site [here]()
+
