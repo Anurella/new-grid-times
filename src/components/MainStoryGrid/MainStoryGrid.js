@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
+
 import {
   MAIN_STORY,
   OPINION_STORIES,
@@ -12,6 +13,7 @@ import MainStory from '../MainStory';
 import SecondaryStory from '../SecondaryStory';
 import OpinionStory from '../OpinionStory';
 import Advertisement from '../Advertisement';
+import { QUERIES } from '../../constants';
 
 const MainStoryGrid = () => {
   return (
@@ -30,7 +32,7 @@ const MainStoryGrid = () => {
 
       <OpinionSection>
         <SectionTitle>Opinion</SectionTitle>
-        <StoryList>
+        <StoryList className='opinion'>
           {OPINION_STORIES.map((story, index) => (
             <OpinionStory key={story.id} {...story} />
           ))}
@@ -66,10 +68,30 @@ const SecondaryStorySection = styled.section`
 const StoryList = styled.div`
   display: flex;
   flex-direction: column;
+  gap:16px;
+
+  a:not(:last-child)  {
+    border-bottom: 1px solid  var(--color-gray-300);
+    padding-bottom: 16px ;
+  }
+
+
 `;
 
 const OpinionSection = styled.section`
   grid-area: opinion-stories;
+
+  @media ${ QUERIES.tabletOnly } {
+    .opinion {
+      flex-direction: row ;
+
+      a {
+      border-bottom:none;
+    }
+    }
+
+    
+  }
 `;
 
 const AdvertisementSection = styled.section`
